@@ -2,7 +2,7 @@ import Sensors from './components/sensors/Sensors';
 import Navbar from './components/navbar/Navbar';
 import {Route, Routes } from 'react-router-dom'
 import Graphs from './components/graphs/Graphs';
-import User from './components/users/Users';
+import Predict from './components/predict/Predict';
 import Sidebar from './components/sidebar/Sidebar';
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
           <Routes>
             <Route exact path="/" element = {<Sensors/>} />
             <Route exact path="/graphs" element = {<Graphs/>} />
-            <Route exact path="/users" element = {<User/>} />
+            <Route exact path="/predict" element = {<Predict/>} />
           </Routes>
 
         </div>

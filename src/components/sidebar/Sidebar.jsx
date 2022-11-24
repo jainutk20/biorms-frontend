@@ -10,10 +10,9 @@ import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 
-import SensorsIcon from '@mui/icons-material/Sensors';
+import TocIcon from '@mui/icons-material/Toc';
 import AutoGraphIcon from '@mui/icons-material/AutoGraph';
-import SupervisedUserCircleIcon from '@mui/icons-material/SupervisedUserCircle';
-
+import PinIcon from '@mui/icons-material/Pin';
 import './sidebar.css'
 
 export default function Sidebar() {
@@ -39,8 +38,8 @@ export default function Sidebar() {
           <List>
             <Link to="/">
               <ListItem button key={"Sensors"}>
-                <ListItemIcon><SensorsIcon/></ListItemIcon>
-                <ListItemText>Sensors</ListItemText>
+                <ListItemIcon><TocIcon/></ListItemIcon>
+                <ListItemText>Table</ListItemText>
               </ListItem>
             </Link>
 
@@ -51,10 +50,10 @@ export default function Sidebar() {
               </ListItem>
             </Link>
 
-            <Link to="/users">
-              <ListItem button key={"Users"}>
-                <ListItemIcon><SupervisedUserCircleIcon/></ListItemIcon>
-                <ListItemText>Users</ListItemText>
+            <Link to="/predict">
+              <ListItem button key={"Predict"}>
+                <ListItemIcon><PinIcon/></ListItemIcon>
+                <ListItemText>Predict yield</ListItemText>
               </ListItem>
             </Link>
 
