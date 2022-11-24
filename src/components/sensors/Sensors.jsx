@@ -3,7 +3,7 @@ import SensorTable from "../sensorTable/SensorTable.jsx";
 import useFetch from "../../useFetch";
 
 const Sensors = () => {
-    const {data:sensors, pending, error} = useFetch('http://localhost:5000/reactor1/batch?batchsize=15');
+    const {data:sensors, pending, error} = useFetch('http://localhost:5000/reactor1/batch?batchsize=10');
     return (
         <div className="sensors" >
           {error && <p>Error: {error}</p>}

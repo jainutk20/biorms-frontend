@@ -33,10 +33,10 @@
   color: #ec5934;
 }
 .content {
-  max-width: 800px;
-  margin: 40px auto;
+  max-width: 1000px;
+  margin: 5px auto;
   padding: 20px;
 }
 .sensors, .users, .graphs{
-  margin: 0 100px;
+  margin: 0 10px;
 }

@@ -6,9 +6,9 @@ const SensorTable = ({sensors, title}) => {
         (sensor)=>{
             // const date = sensor.updatedAt.split("T")[0];
             // const time = sensor.updatedAt.split("T")[1]
-
+            
             return(
-                <tr>
+                <tr key={index}>
                     <td>{index--}</td>
                     <td>{sensor.DTime}</td>
                     <td>{sensor.PH100}</td>

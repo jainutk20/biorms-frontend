@@ -22,11 +22,11 @@ const Navbar = () => {
                         Github
                 </a>
 
-                <a  href="https://create.arduino.cc/editor/utkarsh0902/95a4c582-e4d7-4dc9-b0f0-b47a7a798933"
+                <a  href="https://drive.google.com/drive/u/2/folders/1w-QQa6uUJuGIWbJxefZfzzEeXm2HS6vK"
                     target="_blank"
                     rel="noreferrer" 
                 >
-                    Ardiuno
+                    GDrive
                 </a>
             </div>
         </nav>
