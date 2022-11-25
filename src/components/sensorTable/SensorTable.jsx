@@ -1,20 +1,18 @@
 import './sensorTable.css'
 
-const SensorTable = ({sensors, title}) => {
-    var index = sensors.length;
-    const sensorData = sensors.map(
-        (sensor)=>{
-            // const date = sensor.updatedAt.split("T")[0];
-            // const time = sensor.updatedAt.split("T")[1]
-            
+const SensorTable = ({schema, values, title}) => {
+    var index = values.length;
+    const sensorData = values.map(
+        (value)=>{
             return(
                 <tr key={index}>
                     <td>{index--}</td>
-                    <td>{sensor.DTime}</td>
-                    <td>{sensor.PH100}</td>
-                    <td>{sensor.PI100}</td>
-                    <td>{sensor.TI100_PV}</td>
-                    <td>{sensor.TI100_SP}</td>
+                    {/* Map values corresponding to different sensors mentioned in the schema */}
+                    {schema.map((sensorName) =>{
+                        return(
+                        <td key={sensorName}>{value[sensorName]}</td>
+                        )}
+                    )}
                 </tr>
             )
         }
@@ -26,11 +24,12 @@ const SensorTable = ({sensors, title}) => {
                 <thead>
                     <tr>
                         <th>Index no.</th>
-                        <th >DTime</th>
-                        <th >PH100</th>
-                        <th >PI100</th>
-                        <th >TI100_PV</th>
-                        <th >TI100_SP</th>
+                        {/* List of all the sensor names present in the schema */}
+                        {schema.map((sensorName) =>{
+                            return(
+                            <th key={sensorName}>{sensorName}</th>
+                            )}
+                        )}
                     </tr>
                 </thead>
                 <tbody>

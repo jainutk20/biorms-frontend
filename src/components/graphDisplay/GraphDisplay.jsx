@@ -36,7 +36,7 @@ export default function GraphDisplay({
     responsive: true,
     plugins: {
       legend: {
-        position: 'top',
+        position: 'right',
       },
       // title: {
       //   display: true,
