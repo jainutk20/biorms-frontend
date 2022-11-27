@@ -4,6 +4,7 @@ import TextField from '@mui/material/TextField';
 import MenuItem from '@mui/material/MenuItem';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
+import { Alert } from "@mui/material";
 
 
 const reactors = [
@@ -54,6 +55,7 @@ const ReactorSelect = ({
         setPending(true);
     }
     return(
+    <>
         <Box 
             sx={{ marginBottom:"10px",
                   marginTop:"30px",
@@ -77,13 +79,14 @@ const ReactorSelect = ({
             </TextField>
 
             <TextField 
-                id="batch-size" 
+                id="batch-size"
+                type="number" 
                 label="Batch size" 
                 variant="outlined" 
                 defaultValue={batchSize}
                 onChange={handleText}
-                sx={{width:100}}/>
-
+                sx={{width:100}}
+            />
             <Button 
                 id="refresh-btn"
                 variant="contained"
@@ -91,7 +94,10 @@ const ReactorSelect = ({
                 >
                     Refresh
             </Button>
+            
         </Box>
+        <Alert severity="info">Enter batch size = 0 (non-positive) to get all sensor values.</Alert>
+    </>
     )
 
 };

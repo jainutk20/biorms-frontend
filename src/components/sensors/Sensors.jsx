@@ -15,7 +15,7 @@ const Sensors = () => {
     return (
         <div className="sensors" >
 
-          <h2>All sensor values</h2>
+          <h2>Sensor values</h2>
           <hr/>
 
           <ReactorSelect setPending = {setPending}/>

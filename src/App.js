@@ -5,7 +5,6 @@ import Graphs from './components/graphs/Graphs';
 import Predict from './components/predict/Predict';
 import Sidebar from './components/sidebar/Sidebar';
 import { ReactorContextProvider } from './context/ReactorContext';
-import ReactorSelect from './components/reactorSelect/ReactorSelect';
 
 function App() {
   return (
