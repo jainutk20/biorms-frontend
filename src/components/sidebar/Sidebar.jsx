@@ -13,7 +13,6 @@ import ListItemText from "@mui/material/ListItemText";
 import TocIcon from '@mui/icons-material/Toc';
 import AutoGraphIcon from '@mui/icons-material/AutoGraph';
 import PinIcon from '@mui/icons-material/Pin';
-import './sidebar.css'
 
 export default function Sidebar() {
   let drawerWidth = 200;
@@ -29,13 +28,17 @@ export default function Sidebar() {
             boxSizing: "border-box"
           }
         }}
-        className="sidebar" >
+        className="sidebar" 
+        >
+
         <Toolbar>
           <Typography variant="h5">Biogas RMS</Typography>
         </Toolbar>
+
         <span>&nbsp;&nbsp;</span>
+
         <Box sx={{ overflow: "auto" }}>
-          <List>
+          <List >
             <Link to="/">
               <ListItem button key={"Sensors"}>
                 <ListItemIcon><TocIcon/></ListItemIcon>

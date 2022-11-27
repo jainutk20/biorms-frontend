@@ -1,6 +1,6 @@
 import './sensorTable.css'
 
-const SensorTable = ({schema, values, title}) => {
+const SensorTable = ({schema, values}) => {
     var index = values.length;
     const sensorData = values.map(
         (value)=>{
@@ -19,7 +19,6 @@ const SensorTable = ({schema, values, title}) => {
     )
     return (
         <div className="sensor-list">
-            <h2>{title}</h2>
             <table className='sensor-table'>
                 <thead>
                     <tr>

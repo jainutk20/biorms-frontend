@@ -1,7 +1,4 @@
 import React from 'react'
-import UserTable from '../userTable/UserTable';
-import useFetch from "../../useFetch";
-
 export default function Users() {
   // const {data:users, pending, error} = useFetch('http://localhost:5000/users');
   return (

@@ -3,6 +3,7 @@
 /* base styles */
 * {
   margin: 0;
+  text-decoration: none;
   font-family: "Quicksand";
   color: #333;
 }
@@ -16,6 +17,7 @@
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
 }
+
 .sidebar h5 {
   color: #ec5934;
   font-weight: bold;
