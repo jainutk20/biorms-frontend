@@ -9,7 +9,7 @@ import './graphs.css'
 
 export default function Graphs() {
   const {reactorNum, batchSize} = useContext(ReactorContext);
-    let URL = 'http://localhost:5000/'+ reactorNum + '/batch?batchsize=' + batchSize;
+    let URL = 'http://localhost:6000/'+ reactorNum + '/batch?batchsize=' + batchSize;
     
   // Define list of line colors and border colors for the graphs
   const colors = ["rgba(255,100,0,0.8)", "rgba(5, 105, 107,0.8)", "rgba(50,205,50,0.8)", "rgba(255,99,71,0.8)"];

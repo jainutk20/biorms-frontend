@@ -10,7 +10,7 @@ const Sensors = () => {
 
     const {reactorNum, batchSize} = useContext(ReactorContext);
     // let [pending, setPending] = useState(true);
-    let URL = 'http://localhost:5000/'+ reactorNum + '/batch?batchsize=' + batchSize;
+    let URL = 'http://localhost:6000/'+ reactorNum + '/batch?batchsize=' + batchSize;
     let {data:response, pending, setPending, error} = useFetch(URL);
     return (
         <div className="sensors" >
